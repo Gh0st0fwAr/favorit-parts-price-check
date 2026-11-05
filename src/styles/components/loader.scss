@@ -1,0 +1,27 @@
+@use '../variables' as *;
+
+.loader {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid $line;
+  border-radius: $radius;
+  background: $surface;
+  color: $ink-soft;
+}
+
+.loader__spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid $line;
+  border-top-color: $accent;
+  border-radius: 50%;
+  animation: loaderSpin 0.7s linear infinite;
+}
+
+@keyframes loaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

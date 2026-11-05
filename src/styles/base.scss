@@ -1,0 +1,35 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background: $bg;
+  color: $ink;
+  font-family: $font-sans;
+  line-height: 1.45;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}

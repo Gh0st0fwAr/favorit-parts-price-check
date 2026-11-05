@@ -1,0 +1,19 @@
+// Палитра и токены (SCSS). В компонентах: @use '../variables' as *;
+
+$bg: #f3f5f7;
+$surface: #ffffff;
+$ink: #1c2430;
+$ink-soft: #5c6b7a;
+$line: #d8dee6;
+$accent: #1f6b4a;
+$accent-soft: rgba(31, 107, 74, 0.12);
+$accent-strong: #165538;
+$danger: #b42318;
+$danger-soft: rgba(180, 35, 24, 0.1);
+$white: #ffffff;
+$shadow: rgba(28, 36, 48, 0.08);
+
+$radius: 10px;
+
+$font-sans: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+$font-mono: 'IBM Plex Mono', ui-monospace, monospace;

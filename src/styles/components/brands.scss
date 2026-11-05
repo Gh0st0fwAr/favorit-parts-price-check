@@ -1,0 +1,51 @@
+@use '../variables' as *;
+
+.brands {
+  background: $surface;
+  border: 1px solid $line;
+  border-radius: $radius;
+  padding: 1rem;
+  box-shadow: 0 1px 2px $shadow;
+}
+
+.brands__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.brands__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brands__item {
+  margin: 0;
+}
+
+.brands__button {
+  padding: 0.45rem 0.85rem;
+  border: 1px solid $line;
+  border-radius: $radius;
+  background: $white;
+  color: $ink;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+
+  &:hover {
+    border-color: $accent;
+  }
+
+  &.isActive {
+    border-color: $accent;
+    background: $accent-soft;
+    color: $accent-strong;
+    font-weight: 600;
+  }
+}

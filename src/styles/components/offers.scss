@@ -1,0 +1,78 @@
+@use '../variables' as *;
+
+.offers {
+  background: $surface;
+  border: 1px solid $line;
+  border-radius: $radius;
+  padding: 1rem;
+  box-shadow: 0 1px 2px $shadow;
+  overflow: hidden;
+}
+
+.offers__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.offers__scroll {
+  overflow-x: auto;
+}
+
+.offers__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.offers__head {
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid $line;
+  color: $ink-soft;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.offers__cell {
+  padding: 0.7rem 0.75rem;
+  border-bottom: 1px solid $line;
+  vertical-align: top;
+}
+
+.offers__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.offers__brand {
+  font-weight: 600;
+}
+
+.offers__detail {
+  color: $ink-soft;
+  font-size: 0.88rem;
+}
+
+.offers__number {
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  color: $ink-soft;
+}
+
+.offers__price {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.offers__stock {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.offers__empty {
+  margin: 0;
+  color: $ink-soft;
+}

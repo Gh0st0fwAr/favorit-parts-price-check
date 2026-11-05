@@ -1,0 +1,14 @@
+@use '../variables' as *;
+
+.alert {
+  padding: 0.85rem 1rem;
+  border-radius: $radius;
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+}
+
+.alert_danger {
+  background: $danger-soft;
+  border-color: rgba(180, 35, 24, 0.25);
+  color: $danger;
+}

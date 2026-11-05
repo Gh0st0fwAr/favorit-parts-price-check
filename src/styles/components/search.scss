@@ -1,0 +1,64 @@
+@use '../variables' as *;
+
+.search {
+  background: $surface;
+  border: 1px solid $line;
+  border-radius: $radius;
+  padding: 1rem;
+  box-shadow: 0 1px 2px $shadow;
+}
+
+.search__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.search__field {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.search__label {
+  font-size: 0.85rem;
+  color: $ink-soft;
+  font-weight: 500;
+}
+
+.search__input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid $line;
+  border-radius: $radius;
+  background: $white;
+  color: $ink;
+  outline: none;
+  transition: border-color 0.15s ease;
+
+  &:focus {
+    border-color: $accent;
+  }
+}
+
+.search__submit {
+  padding: 0.65rem 1.15rem;
+  border: none;
+  border-radius: $radius;
+  background: $accent;
+  color: $white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+
+  &:hover:not(:disabled) {
+    background: $accent-strong;
+  }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}

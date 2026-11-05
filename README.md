@@ -7,7 +7,7 @@
 - React (без TypeScript)
 - Redux Toolkit
 - Vite
-- SCSS (BEM, однословные блоки)
+- SCSS (BEM)
 
 ## Запуск
 
@@ -29,12 +29,4 @@ Dev-сервер проксирует запросы на `https://api.favorit-p
 2. Выбор бренда → запрос аналогов (`number` + `brand` + `analogues=on`).
 3. Таблица: название/производитель, цена (минимум по `warehouses`), остаток.
 
-## Деплой (GitHub Pages)
-
-1. Settings → Pages → Source: **GitHub Actions**
-2. (Опционально) Settings → Secrets → `VITE_API_KEY` — иначе в билд попадёт тестовый ключ из кода
-3. Push в `main` запускает workflow `Deploy to GitHub Pages`
-
 Демо: https://gh0st0fwar.github.io/favorit-parts-price-check/
-
-Документация API: https://lk.favorit-parts.ru/static/wsprice.pdf
